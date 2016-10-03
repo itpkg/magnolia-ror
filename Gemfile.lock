@@ -102,6 +102,7 @@ GEM
       railties (>= 4.1.0, < 5.1)
       responders
       warden (~> 1.2.3)
+    devise-bootstrap-views (0.0.9)
     devise-i18n (1.1.0)
     elasticsearch (2.0.0)
       elasticsearch-api (= 2.0.0)
@@ -342,6 +343,7 @@ DEPENDENCIES
   carrierwave
   coffee-rails (~> 4.2)
   devise (~> 4.2)
+  devise-bootstrap-views
   devise-i18n
   elasticsearch-model
   elasticsearch-rails

@@ -52,6 +52,7 @@ gem 'slim'
 
 gem 'devise', '~> 4.2'
 gem 'devise-i18n'
+gem 'devise-bootstrap-views'
 gem 'rolify'
 gem 'pundit'
 
