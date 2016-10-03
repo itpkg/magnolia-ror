@@ -1,0 +1,17 @@
+li class="nav-item dropdown"
+  - if current_user
+    a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"
+      == t '.welcome', name: current_user.email
+    div class="dropdown-menu"
+      == link_to t('.dashboard'), dashboard_path, class:'dropdown-item'
+      == link_to t('.sign_out'), destroy_user_session_path, method: :delete, data: {confirm: t('are_you_sure')}, class:'dropdown-item'
+
+  - else
+    a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"
+      == t '.sign_in_or_up'
+    div class="dropdown-menu"
+      == link_to t('devise.shared.links.sign_in'), new_user_session_path, class:'dropdown-item'
+      == link_to t('devise.shared.links.sign_up'), new_user_registration_path, class:'dropdown-item'
+      == link_to t('devise.shared.links.forgot_your_password'), new_user_password_path, class:'dropdown-item'
+      == link_to t('devise.shared.links.didn_t_receive_unlock_instructions'), new_user_unlock_path, class:'dropdown-item'
+      == link_to t('devise.shared.links.didn_t_receive_confirmation_instructions'), new_user_confirmation_path, class:'dropdown-item'

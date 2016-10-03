@@ -1,10 +1,10 @@
 - content_for :root do
-  /== render 'shared/header'
+  == render 'shared/header'
   div class="container"
-    /== render 'shared/flash_box'
+    == render 'shared/flash_box'
     br
     == yield
     br
-    /== render 'shared/footer'
+    == render 'shared/footer'
 
 == render file: 'layouts/base'

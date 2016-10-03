@@ -1,0 +1,6 @@
+li class="nav-item dropdown"
+  a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false" #{t '.switch_lang'}
+  div class="dropdown-menu"
+    == link_to t('languages.english'), {locale: :en, format:params[:format]}, class:'dropdown-item'
+    == link_to t('languages.simplified_chinese'), {locale: 'zh-CN', format:params[:format]}, class:'dropdown-item'
+    == link_to t('languages.traditional_chinese'), {locale: 'zh-TW', format:params[:format]}, class:'dropdown-item'

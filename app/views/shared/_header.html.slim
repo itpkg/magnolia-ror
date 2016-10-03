@@ -1,0 +1,12 @@
+nav class="navbar navbar-fixed-top navbar-dark bg-inverse"
+  == link_to (Setting.get_site_info(:subTitle) || ' '), root_path, {class: 'navbar-brand'}
+  ul class="nav navbar-nav"
+    li class="nav-item"
+      == link_to t('.home'), root_path, class: 'nav-link'
+    - top_links.each do |href, title|
+      li class="nav-item"
+        == link_to title, "#{href}", class: 'nav-link'
+
+  ul class="nav navbar-nav pull-xs-right"
+    == render 'shared/lang_bar'
+    == render 'shared/personal_bar'

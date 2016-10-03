@@ -1,0 +1,11 @@
+hr
+footer
+  p class="pull-right"
+    == link_to t('languages.english'), {locale: :en, format:params[:format]}
+    | &nbsp;
+    == link_to t('languages.simplified_chinese'), {locale: 'zh-CN', format:params[:format]}
+    | &nbsp;
+    == link_to t('languages.traditional_chinese'), {locale: 'zh-TW', format:params[:format]}
+
+  p
+    == Setting.get_site_info :copyright

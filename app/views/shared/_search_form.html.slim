@@ -1,0 +1,10 @@
+== form_tag action, {method: :get} do
+  div class="form-group"
+    == label_tag :description, t('simple_form.labels.defaults.keywords')
+    == text_field_tag :keywords, params[:keywords], {class: 'form-control'}
+
+  div class="form-group"
+    - resources.each do |res|
+      == radio_button_tag :resource, res, params[:resource]==res
+      == label_tag "resource_#{res}".to_sym, t("activerecord.models.#{res.downcase.gsub '::', '/'}")
+    == submit_tag t('buttons.search'), {class: 'btn btn-default'}

@@ -1,0 +1,7 @@
+- if notice
+  br
+  == render 'shared/alert', style: 'success', title: t('.success'), body: notice
+
+- if alert
+  br
+  == render 'shared/alert', style: 'danger', title: t('.fail'), body: alert
