@@ -11,3 +11,4 @@
 //= require_tree .
 //= require spree/backend/spree_i18n
 //= require spree/backend/spree_braintree_vzero
+//= require spree/backend/spree_globalize

@@ -51,6 +51,7 @@ gem 'spree_auth_devise', '~> 3.1.0'
 gem 'spree_gateway', '~> 3.1.0'
 
 gem 'spree_i18n', git: 'https://github.com/spree-contrib/spree_i18n.git', branch: '3-1-stable'
+gem 'spree_globalize', git: 'https://github.com/spree-contrib/spree_globalize.git', branch: 'master'
 gem 'spree_braintree_vzero', git: 'https://github.com/spree-contrib/spree_braintree_vzero.git', branch: '3-1-stable'
 gem 'spree_address_book', git:'https://github.com/spree-contrib/spree_address_book.git', branch: '3-1-stable'
 gem 'spree_social', git: 'https://github.com/spree-contrib/spree_social.git', branch: '3-1-stable'
@@ -61,3 +62,12 @@ gem 'spree_editor', git: 'https://github.com/spree-contrib/spree_editor.git', br
 gem 'spree_wishlist', git: 'https://github.com/spree-contrib/spree_wishlist.git', branch: 'master'
 gem 'spree_email_to_friend', git: 'https://github.com/spree-contrib/spree_email_to_friend.git', branch: 'master'
 gem 'spree_sitemap', git: 'https://github.com/spree-contrib/spree_sitemap.git', branch: '3-1-stable'
+
+group :development do
+  gem 'capistrano', '~> 3.1'
+  gem 'capistrano-rails', '~> 1.1'
+  gem 'capistrano-rbenv', '~> 2.0'
+  gem 'capistrano-npm'
+  gem 'capistrano3-puma', git: 'https://github.com/seuros/capistrano-puma.git'
+  # gem 'capistrano-sidekiq', git: 'https://github.com/seuros/capistrano-sidekiq.git'
+end
