@@ -1,10 +1,10 @@
-# front
+# front of magnolia
 
 > A Vue.js project
 
 ## Build Setup
 
-``` bash
+```bash
 # install dependencies
 npm install
 
@@ -16,3 +16,8 @@ npm run build
 ```
 
 For detailed explanation on how things work, checkout the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+
+## Documents
+* [vue](http://vuejs.org/guide/)
+* [vue-loader](http://router.vuejs.org/en/index.html)
+* [vuex](http://vuex.vuejs.org/en/index.html)

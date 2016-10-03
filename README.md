@@ -65,7 +65,7 @@ cd demo
 go run main.go s
 # start front server
 cd front
-npm run start
+npm run dev
 ```
 
 ## Documents
