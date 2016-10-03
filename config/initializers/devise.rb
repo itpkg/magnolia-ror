@@ -1,1 +1,1 @@
-Devise.secret_key = "0ed943d2cb00c5ac835b0ea26c979b5827653c3b54d346eed8fc09cedb351be8b842b4fbda8b884e202a6ee00cc4fe23df41"
+Devise.secret_key = ENV['SECRET_KEY_BASE']
