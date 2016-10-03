@@ -1,0 +1,13 @@
+- @title = t '.title'
+
+- @items.each do |item|
+  blockquote
+    p #{md2hm item.content}
+
+    footer
+      == time_ago_in_words item.created_at
+      cite
+        == link_to t('buttons.remove'), leave_word_path(item), method: :delete, data: {confirm: t('are_you_sure')}
+
+
+== paginate @items
