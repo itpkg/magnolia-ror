@@ -14,4 +14,5 @@
 
 # my
 /.idea
-public/sitemap*
+/public/sitemap*
+/public/ckeditor_assets

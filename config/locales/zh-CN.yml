@@ -1,0 +1,13 @@
+zh-CN:
+  spree:
+    add_to_wishlist: 添加到心愿单
+    returns: 退货
+    authorized: 批准
+    canceled: 取消
+    clear_cache_warning: 清空缓存将会影响性能
+    clear_cache: 清理缓存
+    recently_viewed_products: 最近查看过的商品
+  activerecord:
+    attributes:
+      spree/order:
+        considered_risky: 风险考虑

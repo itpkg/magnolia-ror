@@ -15,4 +15,7 @@ Spree.config do |config|
   # config.track_inventory_levels = false
 end
 
-Spree.user_class = "Spree::User"
+Spree.user_class = 'Spree::User'
+
+SpreeI18n::Config.available_locales = [:en, :'zh-CN', :'zh-TW'] # displayed on frontend select box
+SpreeGlobalize::Config.supported_locales = [:en, :'zh-CN', :'zh-TW'] # displayed on translation forms
