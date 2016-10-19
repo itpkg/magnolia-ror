@@ -50,7 +50,9 @@ GRANT ALL PRIVILEGES ON DATABASE db-name TO user-name;
 
 ## Database initialization
 ```
-rake db:migrate
+bundle exec rake db:migrate
+bundle exec rake db:seed
+bundle exec rake spree_sample:load
 ```
 
 ## How to run the test suite
